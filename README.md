@@ -5,4 +5,4 @@ Developed by Amirreza Karimi
 
 Technologies Used, Html and Css and Js
 
-Demo - https://amirezakarimi.github.io/Architecture/
+Demo - https://amirezakarimi.github.io/Home-appliance-store/
