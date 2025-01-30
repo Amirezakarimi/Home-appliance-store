@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page | Online Store</title>
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="icon" href="Images/favicon.ico">
+
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">Online Store</div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-page">
+        <div class="breadcrumb">
+            <a href="/">Home</a> / 
+            <a href="/products">Products</a> / 
+            <span>Product Name</span>
+        </div>
+
+        <section class="product-container">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="images/product1.jpg" alt="Main Product Image" id="mainImage">
+                    <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                </div>
+                <div class="thumbnail-container">
+                    <img src="Images/product1.jpg" class="thumbnail active" data-src="Images/product1.jpg" alt="Thumbnail 1">
+                    <img src="Images/product2.jpg" class="thumbnail" data-src="Images/product2.jpg" alt="Thumbnail 2">
+                    <img src="Images/product1.jpg" class="thumbnail" data-src="Images/product1.jpg" alt="Thumbnail 3">
+                    <img src="Images/product2.jpg" class="thumbnail" data-src="Images/product2.jpg" alt="Thumbnail 4">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title">Product Name</h1>
+                <div class="product-meta">
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(123 reviews)</span>
+                    </div>
+                    <span class="product-code">Product Code: PRD-1234</span>
+                </div>
+
+                <div class="product-price">
+                    <span class="current-price">$250.00</span>
+                    <span class="old-price">$300.00</span>
+                    <span class="discount-badge">20% OFF</span>
+                </div>
+
+                <div class="product-variants">
+                    <h3>Select Color:</h3>
+                    <div class="color-options">
+                        <label class="color-box">
+                            <input type="radio" name="color" value="brown">
+                            <span class="color-display" style="background-color: #DCB47A;"></span>
+                            <span class="color-name">Brown</span>
+                        </label>
+                        <label class="color-box">
+                            <input type="radio" name="color" value="black">
+                            <span class="color-display" style="background-color: #262626;"></span>
+                            <span class="color-name">Black</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="add-to-cart-section">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="10">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-features">
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Shipping</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-undo"></i>
+                        <span>7 Days Return</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quality Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="specifications">Specifications</button>
+                <button class="tab-btn" data-tab="comments">Reviews</button>
+            </div>
+
+            <div class="tab-content active" id="description">
+                <h2>Product Description</h2>
+                <p>Detailed product description goes here...</p>
+            </div>
+
+            <div class="tab-content" id="specifications">
+                <h2>Technical Specifications</h2>
+                <table class="specs-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Specification</th>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Specification details</td>
+                    </tr>
+                    <tr>
+                        <td>Dimensions</td>
+                        <td>Specification details</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tab-content" id="comments">
+                <h2>Customer Reviews</h2>
+                <div class="comments-container">
+                    <!-- Reviews will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer">
+            <div class="left-footer">
+                <div>
+                    <input class="input-email-sub" type="email" name="input-Email" id="" placeholder="Enter your email">
+                    <button class="sub-footer" type="submit">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="right-footer">
+                <div class="Support titles-right-footer">
+                    <a class="titles-right-footer" href=""><h3>Support</h3></a>
+                    <div class="sub-menu-footer">
+                        <span class="sub-title-right-footer">about Us</span>
+                        <span class="sub-title-right-footer">Careers</span>
+                        <span class="sub-title-right-footer">blog</span>
+                    </div>
+                </div>
+
+                <div class="Useful-link titles-right-footer">
+                    <a class="titles-right-footer" href=""><h3>Useful Link</h3></a>
+                    <div class="sub-menu-footer">
+                        <span class="sub-title-right-footer">Payment & Tax</span>
+                        <span class="sub-title-right-footer">Team of service</span>
+                        <span class="sub-title-right-footer">Privaci Policy</span>
+                    </div>
+                </div>
+
+                <div class="Our-menu titles-right-footer">
+                    <a class="titles-right-footer" href=""><h3>Our Menu</h3></a>
+                    <div class="sub-menu-footer">
+                        <span class="sub-title-right-footer">Best Product</span>
+                        <span class="sub-title-right-footer">Category</span>
+                    </div>
+                </div>
+
+                <div class="Address titles-right-footer">
+                    <a class="titles-right-footer" href=""><h3>Address</h3></a>
+                    <div class="sub-menu-footer">
+                        <span class="sub-title-right-footer">Tehran , Iran</span>
+                        <span class="sub-title-right-footer">test@test.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+
+    <div class="notification" style="display: none;">
+        Product added to cart successfully
+    </div>
+
+    <script src="js/product.js"></script>
+</body>
+</html> 
