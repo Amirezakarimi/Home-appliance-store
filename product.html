@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page | Online Store</title>
+    <title>Products Page</title>
     <link rel="stylesheet" href="styles/product.css">
-    <link rel="icon" href="Images/favicon.ico">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header class="main-header">
-        <nav class="nav-container">
-            <div class="logo">Online Store</div>
-            <ul class="nav-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-            <div class="cart-icon">
-                <span class="cart-count">0</span>
-                <i class="fas fa-shopping-cart"></i>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo">
             </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-icons">
+                <div class="account-icon">
+                    <a href="login.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+                <div class="cart-icon">
+                    <span class="cart-count">0</span>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html" class="active">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 

@@ -4,6 +4,9 @@
 }
 
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: workSans;
 }
 
@@ -79,12 +82,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-
 }
 
 .searchbox {
     background: fixed;
-    width: 300px;
+    width: 400px;
     padding: 12px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
@@ -141,6 +143,7 @@
 
 .sub-title-best-sells {
     margin-left: 10%;
+    margin-top: 20px;
     color: #1E1E1E;
 }
 
@@ -151,6 +154,7 @@
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
+    margin-top: 20px;
 }
 
 .shape-best-sells {
@@ -218,7 +222,7 @@
 /* ------------------------ categoty ---------------------------------------- */
 
 .category {
-    height: 1200px;
+    height: 1100px;
     text-align: center;
 }
 
@@ -380,6 +384,10 @@
     align-items: center;
 }
 
+.header-account{
+    width: 27px;
+}
+
 .cart-badge {
     position: relative;
     margin-left: 5px;
@@ -417,7 +425,6 @@
     }
 }
 
-/* استایل سبد خرید کشویی */
 .cart-sidebar {
     position: fixed;
     top: 0;
